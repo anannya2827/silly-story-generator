@@ -1,0 +1,130 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f1ea; /* Soft warm cream background */
+  color: #4a3e3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.journal-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(184, 172, 162, 0.3);
+  border: 1px solid #e8e2d5;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #7d6b83; /* Pastel Lavender/Muted Purple */
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #a39391;
+  text-align: center;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d3c4be, transparent);
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #7d6b83;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #e1d8cf;
+  border-radius: 10px;
+  font-family: inherit;
+  background-color: #faf8f5;
+  color: #4a3e3d;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #bfa89e;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.radio-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px 28px;
+  background-color: #d1e3dd; /* Soft Mint Pastel */
+  color: #435e55;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(209, 227, 221, 0.5);
+}
+
+button:hover {
+  background-color: #c0d6cf;
+  transform: translateY(-1px);
+}
+
+p.story {
+  margin-top: 25px;
+  background-color: #f7eff2; /* Soft Rose Pastel */
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #5c4d51;
+  border-left: 4px solid #e3c4cf;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.visibility-hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

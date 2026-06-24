@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Story Chronicles</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="journal-card">
+      <h1>✨ Story Chronicles</h1>
+      <p class="subtitle">Weave a cozy tale of your own...</p>
+      <hr class="divider">
+
+      <div class="input-group">
+        <label for="customname">Companion's Name:</label>
+        <input id="customname" type="text" placeholder="Luna">
+      </div>
+
+      <div class="radio-group">
+        <label>
+          <input id="whimsical" type="radio" name="vibes" value="whimsical" checked>
+          <span>🌸 Whimsical</span>
+        </label>
+        <label>
+          <input id="spooky" type="radio" name="vibes" value="spooky">
+          <span>🔮 Twilight</span>
+        </label>
+      </div>
+
+      <div class="button-container">
+        <button class="randomize">Weave Magic</button>
+      </div>
+
+      <!-- The story will beautifully fade into this paragraph -->
+      <p class="story visibility-hidden"></p>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
